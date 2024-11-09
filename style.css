@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #1B1726;
+
+}
+
+img{
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url(Cerrduras/bg.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    padding: 80px 0;
+}
+
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+color: #FF5A2C;
+font-size: 25px;
+font-weight: 800;
+text-transform: uppercase;
+
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFFFF;
+    font-weight: 600;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #FF5A2C;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    display: flex;
+}
+
+.header-txt {
+    flex-basis: 50%;
+}
+
+.header-txt h1 {
+    font-size: 60px;
+    color: #FFFFFF;
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+
+.header-txt span {
+    color: #FF5A2C;
+}
+
+.header-txt p {
+    font-size: 17px;
+    color: #E0E0E0;
+    margin-bottom: 45px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.btn-1, .btn-2, .btn-3 {
+    display: inline-block;
+    padding: 11px 35px;
+    border: 2px solid #FF5A2C;
+    border-radius: 25px;
+    margin-right: 25px;
+    font-size: 17px;
+    color: #FFFFFF;
+}
+
+.btn-1:hover {
+    background-color: #FF5A2C;
+}
+
+.popular {
+    padding: 100px 0;
+    text-align: center;
+}
+
+h2 {
+    color: #FFFFFF;
+    font-size: 35px;
+    margin-bottom: 45px;
+}
+
+.popular-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-content img {
+    width: 200 px; /*Puedes ajustar el tamaño de la imagen*/
+    height: auto; /*Mantiene la proporcion original*/
+    transition: transform 0.3s ease-in-out; /*Añade una transición suave*/
+}
+
+.popular-content:hover {
+    transform: scale(1.2);  /*Expande la imagen al 120% de su tamaño original*/
+}
+
+.popular-content:nth-child(1):hover {
+    transition-delay: 0s; /* No hay retraso para la segunda imagen*/
+}
+
+.popular-content:nth-child(2):hover {
+    transition-delay: 0.2s; /* Retraso de 0.2 segundos para la segunda imagen*/
+}
+
+.popular-content:nth-child(3):hover {
+    transition-delay: 0.4s; /* Retraso de 0.4 segundos para la tercera imagen*/
+}
+
+.popular-content:nth-child(4):hover {
+    transition-delay: 0.6s; /* Retraso de 0.6 segundos para la cuarta imagen*/
+}
+
+.popular-content:nth-child(5):hover {
+    transition-delay: 0.8s; /* Retraso de 0.8 segundos para la quinta imagen*/
+}
+
+.popular-content:nth-child(6):hover {
+    transition-delay: 1.0s; /* Retraso de 1.0 segundos para la sexta imagen*/
+}
+
+.popular-content:nth-child(7):hover {
+    transition-delay: 1.2s; /* Retraso de 1.2 segundos para la septima imagen*/
+}
+
+
+.product-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.product-1 {
+    background-color: #2A223A;
+}
+
+.product-txt {
+    padding: 50px 30px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price p {
+    font-size: 17px;
+    color: #FF5A2C;
+
+}
+
+.bnt-2 {
+    padding: 5xp 25xp;
+    background-color: #FF5A2C;
+    margin-right: 0;
+}
+
+.contact {
+    padding: 150px 300px;
+
+}
+
+.contact-content {
+    background-color: #2A223A;
+    text-align: center;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input {
+    padding: 18px 25px;
+    background-color: #3F3456;
+    border: 0;
+    border-radius: 25px;
+    outline: none;
+    margin-right: 10px;
+    color: #FFFFFF;
+    font-size: 17px;
+}
+
+::placeholder {
+    color: #E0E0E0;
+    font-size: 17px;
+}
+
+.btn-3 {
+    background-color: #FF5A2C;
+    cursor: pointer;
+    margin-right: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.link ul {
+    display: flex;
+}
+
+.link ul li > a {
+    font-size: 17px;
+    color: #FFFFFF;
+    margin-right: 20px;
+}
+
+.link ul li > a:hover {
+    color: #FF5A2C;
+}
+
+@media(max-width:991px) {
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #FF5A2C;
+        display: none;
+    }
+
+    .menu .navbar ul li a:hover {
+        color: #1B1726;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+        padding:  80px 30px 50px 30px;
+    }
+
+    .header-txt {
+        text-align: center;
+        flex-basis: 100%;
+    }
+
+    .header-txt h1 {
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+
+    .buttons {
+        justify-content: center;
+
+    }
+
+    .btn-1:last-of-type {
+        margin-right: 0;
+        
+    }
+
+    .popular {
+        display: none;
+    }
+
+    .popular {
+        padding: 30px;
+    }
+
+    .product-content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .product-1 img {
+        width: 100%;
+    }
+
+    .contact {
+        padding: 30px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    input {
+        margin: 0 0 20px 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .link ul {
+        margin-top: 20px;
+    }
+
+
+
+
+}
+
+
